@@ -45,7 +45,7 @@ public class EmployeeRestController {
         return dbEmployee;
     }
 
-    @DeleteMapping("/employee/{employeeId}")
+    @DeleteMapping("/employees/{employeeId}")
     public String deleteEmployee(@PathVariable int employeeId) {
         Optional<Employee> tempEmployee = employeeService.findById(employeeId);
 
